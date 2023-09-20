@@ -1,0 +1,20 @@
+{
+  "num_trials": 15,
+  "hyperparameters": [
+    {
+      "name": "lr",
+      "short_desc": "Learning rate for optimizer.",
+      "type": "real",
+      "range_low": 1e-5,
+      "range_high": 5e-1,
+      "search_type": "log-uniform"
+    },
+
+    {
+      "name": "activation",
+      "short_desc": "Activation function for hidden layers",
+      "type": "categorical",
+      "categories": ["relu", "tanh"]
+    }
+  ]
+}
